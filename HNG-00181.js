@@ -1,6 +1,12 @@
-var name = "Oluwatoyin Bakare"
-var id = "HNG-00181"
-var email = "futoyinbakare@gmail.com"
 
-console.log("Hello World, " + "This is " + name + " with HNGi7 ID " + id + " using Javascript for stage 2 task. " + email)
+function Person(name, id, lan, email) {
+  this.myName = name;
+  this.myId = id;
+  this.myLan = lan;
+  this.myEmail = email;
+}
 
+var myF = new Person("Oluwatoyin Bakare", "HNG-00181", "Javascript", "futoyinbakare@gmail.com");
+
+console.log(
+"Hello World, this is " + myF.myName + " with HNGi7 ID " + myF.myId +  " using " + myF.myLan + " for stage 2 task. " + myF.myEmail + "." ); 
